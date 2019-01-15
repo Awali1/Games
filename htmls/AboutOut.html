@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+	</head>
+	<body>
+		<style type="text/css">
+@keyframes myfirst
+{
+0%   {color: red;}
+25%  {color: yellow;}
+50%  {color: blue;}
+100% {color: green;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {color: red;}
+25%  {color: yellow;}
+50%  {color: blue;}
+100% {color: green;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {color: red;}
+25%  {color: yellow;}
+50%  {color: blue;}
+100% {color: green;}
+}
+
+p{
+	width: 100%;
+	text-align: center;
+	font-size: 250px;
+	animation: myfirst 3s;
+	animation-iteration-count:infinite;
+	-moz-animation: myfirst 3s;	/* Firefox */
+	-moz-animation-iteration-count:infinite;
+	-webkit-animation: myfirst 3s;	/* Safari 和 Chrome */
+	-webkit-animation-iteration-count:infinite;
+	-o-animation: myfirst 3s;	/* Opera */
+	-o-animation-iteration-count:infinite;
+}
+
+}
+		</style>
+		<p>帅</p>
+	</body>
+</html>

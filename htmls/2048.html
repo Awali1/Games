@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/2048.css" />
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/2048.js" ></script>
+	</head>
+	<body>
+		<h2 style="margin: 0 auto; text-align: center;">2048</h2>
+		<div id="all">
+			<ul id="a_ul">
+				<li style="background-color: antiquewhite;"><ul id="li1_ul">
+					</ul></li >
+				
+				<li style="background-color: honeydew;"><ul id="li2_ul">
+					</ul></li>
+					
+				<li style="background-color: aquamarine;"><ul id="li3_ul">
+					</ul></li>
+					
+				<li style="background-color: #A9A9A9;"><ul id="li4_ul">
+					</ul></li>
+			</ul>
+			<div style="margin-top: 20px; text-align: center;">
+			<button id="btn1" type="button" class="btn" onclick="addToLi(1)"></button>
+			<button id="btn2" type="button" class="btn" onclick="addToLi(2)"></button>
+			<button  id="btn3" type="button" class="btn" onclick="addToLi(3)"></button>
+			<button  id="btn4" type="button" class="btn" onclick="addToLi(4)"></button>
+			<button id="btn5" type="button" class="btn" onclick="sendPai()">弃牌次数:3</button>
+		<ul id="ul3">
+		</ul>
+		
+		<div class="divfinally">
+			<h1 id="allnumbers">得分： 0 </h1>
+		</div>
+		</div>
+		</div>
+		
+		<script>
+			addNumber();
+			addNumber();
+			addNumber();
+		</script>
+	</body>
+</html>

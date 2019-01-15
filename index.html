@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/index.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+  	<!--
+      	作者：1824849091@qq.com
+      	时间：2018-11-10
+      	描述：  头部
+      -->
+  		<nav id="headernav" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">North</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <li><a href="htmls/AboutOut.html">关于我们</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">游戏中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="htmls/Retro Snaker.html">贪吃蛇</a></li>
+            <li><a href="htmls/2048.html">2048</a></li>
+            <li><a href="htmls/Tetris.html">俄罗斯方块</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="TXZindex.html">推箱子</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="LLk_index.html">连连看</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" id="sinput1" class="form-control" placeholder="连连看">
+        </div>
+        <button type="submit" id="sinput2" class="btn btn-default">搜索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="Ilight" onclick="light()">关灯</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row">
+	<div style="background-image: url(img/2048logo.png);" class="games col-lg-2" onclick="window.open('htmls/2048.html')"><span>《2048》</span></div>
+	<div style="background-image: url(img/RetroSnaker.png);" class="games col-lg-2" onclick="window.open('htmls/Retro Snaker.html')"><span>《贪吃蛇》</span></div>
+	<div style="background-image: url(img/Tetris.png);" class="games col-lg-2" onclick="window.open('htmls/Tetris.html')"><span>《俄罗斯方块》</span></div>
+	<div style="background-image: url(img/llklogo.png);" class="games col-lg-2" onclick="window.open('LLk_index.html')"><span>《连连看》</span></div>
+	<div style="background-image: url(img/txzlogo.png);" class="games col-lg-2" onclick="window.open('TXZindex.html')"><span>《推箱子》</span></div>
+	<div class="games col-lg-2" onclick="window.open('adds/baiobaiqiang.html')"><span>《小姐姐》</span></div>
+	
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

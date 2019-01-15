@@ -1,0 +1,89 @@
+@keyframes myfirst{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+@keyframes thefast{
+	0%{background-color: aquamarine;height: 35px;}
+	75%{height: 55px;}
+	100%{height: 50px;}
+}
+@-moz-keyframes thefast{
+	0%{background-color: aquamarine;height: 35px;}
+	75%{height: 55px;}
+	100%{height: 50px;}
+}
+@-webkit-keyframes thefast{
+	0%{background-color: aquamarine;height: 35px;}
+	75%{height: 55px;}
+	100%{height: 50px;}
+}
+
+*{list-style-type: none;
+	margin: 0px;
+	padding: 0px;}
+#all{margin: 0 auto;
+	width: 415px;
+	height: 675px;
+	border: 2px solid darkgray;}
+#a_ul{width: 414px;
+	height: 670px;}
+#a_ul>li{float: left;  
+	width: 99px;
+	height: 670px;
+	border: 1px dashed gainsboro;}
+.addclass1{	animation: myfirst .5s;
+	-moz-animation: myfirst .5s;	/* Firefox */
+	-webkit-animation: myfirst .5s;	/* Safari 和 Chrome */
+	-o-animation: myfirst .5s;	/* Opera */}
+#a_ul>li>ul>li{animation: thefast .2s;
+	-moz-animation: thefast .2s;
+	text-align: center;
+	font-size: 24px;
+	width: 95px;
+	height: 50px;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	border: 1px solid cadetblue;
+	opacity: 0.6;}
+#ul3{overflow: hidden;
+	margin-top: 20px;;
+	width: 1500px;
+	height: 70px;}
+#ul3>li{float: left;
+	text-align: center;
+	font-size: 24px;
+	width: 98px;
+	height: 60px;
+	border: 1px solid khaki;
+	transition: all; 0.5s;}
+#ul3>li:first-child{margin-right: 120px;;
+	width: 120px;
+	height: 54px;
+	border: 3px solid #000000;
+	transition: all; 0.3s;}
+.btn{width: 100px;
+	height: 50px;}
+#btn1{background-color: antiquewhite;}
+#btn2{background-color: honeydew;}
+#btn3{background-color: aquamarine;}
+#btn4{background-color: #A9A9A9;}
+#btn5{margin-top: 10px;}
+.divfinally{width: 300px;
+	height: 200px ;
+}
